@@ -15,15 +15,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_content .= "Message:\n$message\n";
 
     // Set headers
-    $headers = "From: $email";
+    $headers = "From: $email\r\n";
+    $headers .= "Reply-To: $email\r\n";
 
     // Send the email
     if (mail($to, $subject, $email_content, $headers)) {
-        // Redirect to a thank-you page (optional)
+        // Redirect to a thank-you page
         header("Location: thank_you.html");
         exit;
     } else {
-        echo "There was an error sending your message. Please try again.";
+        // If the email fails to send
+        echo "<div class='container text-center mt-5'>
+                <h2>Error</h2>
+                <p>There was an error sending your message. Please try again later.</p>
+                <a href='contact.html' class='btn btn-primary'>Return to Contact</a>
+              </div>";
     }
 }
 ?>
