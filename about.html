@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <head>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <head>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- Custom Styles for Dark Theme -->
+        <style>
+            body {
+                background-color: #121212; /* Dark background color */
+                color: #ffffff; /* Light text color */
+            }
+            .navbar, .navbar-dark .navbar-brand, .navbar-nav .nav-link {
+                color: #ffffff; /* White color for navbar elements */
+            }
+            .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link:hover {
+                color: #bb86fc; /* Accent color for active or hovered links */
+            }
+            section {
+                padding: 30px; /* Add some padding to sections */
+            }
+        </style>
+    </head>
+    
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Include Bootstrap JS (add this before closing body tag) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+    <style>
+        /* Custom styling for About section */
+        .about-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .about-section h1 {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .about-section p {
+            color: #888;
+            font-size: 18px;
+        }
+        .profile-picture {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #f2f2f2;
+            background-image: url('images/about/SAVE_20230711_014114.jpg');
+            background-size: cover;
+            background-position: center;
+            margin-top: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .navbar {
+            background-color: #333;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: #fff;
+        }
+        .navbar-brand:hover {
+            color: #ccc;
+        }
+        .search-icon {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<!-- About Section -->
+<section id = "about" class="about-section text-center">
+    <div class="container">
+        <!-- Profile Picture -->
+        <div class="profile-picture mx-auto"></div>
+        
+        <!-- Header -->
+        <h1>BHUVANENDIRAN S</h1>
+        
+<!-- Detailed About Me Section -->
+<section class="about-me-section py-5">
+    <div class="container">
+        <h3 class="text-center mb-4 font-weight-bold">ABOUT ME</h3>
+        
+        <!-- Introduction -->
+        <p>I’m a Data Science Professional transitioning from a background in US Healthcare Claims Processing, currently advancing my expertise in data-driven insights, predictive modeling, and machine learning. I am proficient in Python, SQL, and Tableau, with a strong foundation in data preprocessing, exploratory data analysis, and statistical techniques.</p>
+        
+        <p>Throughout my journey, I have successfully leveraged my analytical skills to enhance accuracy and streamline data verification processes in healthcare claims. Now, I am focused on applying these strengths to broader data science applications, developing innovative solutions that drive informed decision-making.</p>
+        
+        <p>Some of my notable projects include a healthcare fraud detection analysis, aimed at identifying patterns indicative of fraudulent claims, and a data-driven project analyzing restaurant trends in Bengaluru to assist new businesses. My experience also spans projects in telecom churn analysis and vehicle resale market insights, showcasing my ability to derive actionable recommendations across various domains.</p>
+        
+        <p>I am excited to bring my problem-solving approach and analytical mindset to diverse challenges in data science, making meaningful contributions to data-led transformations.</p>
+        
+    </div>
+</section>
+
+
+
+<!-- Professional Experience Section -->
+<section class="professional-experience-section py-5">
+    <div class="container">
+        <h3 class="text-center">PROFESSIONAL EXPERIENCE</h3>
+        
+        <!-- Data Science Project -->
+        <p class="mt-4"><strong>Great Lakes Institute of Management | Data Science Project: Healthcare Provider Fraud Detection</strong></p>
+        <p class="text-muted">October 2024 – Present | Online</p>
+        <ul class="text-left">
+            <li class="mb-2"><strong>Exploratory Data Analysis (EDA):</strong> Conducted in-depth EDA on a healthcare claims dataset to identify patterns indicative of potential fraud, utilizing Python libraries such as Pandas and Matplotlib for data cleaning, visualization, and analysis.</li>
+            <li class="mb-2"><strong>Fraud Detection Insights:</strong> Focused on uncovering insights related to claim anomalies, evaluating features like claim amounts, diagnosis codes, and patient demographics to assess fraud risk factors.</li>
+            <li class="mb-2"><strong>Visualization and Communication:</strong> Developed clear visualizations to communicate findings effectively, supporting data-driven strategies for fraud prevention in the healthcare system.</li>
+        </ul>
+
+        <!-- Process Consultant Role -->
+        <p><strong>Sagility India Private Limited | Process Consultant</strong></p>
+        <p>December 2022 – Present | Coimbatore, India</p>
+        <ul class = "text-left">
+            <li class="mb-2"><strong>Data Verification and Accuracy:</strong> Analyzed and processed US health insurance claims, employing data verification techniques to identify duplicates and ensure the accuracy of treatment and diagnosis codes.</li>
+            <li class="mb-2"><strong>Data-Driven Decisions:</strong> Made informed decisions on claim approvals, denials, and adjustments based on historical claim analysis, extracting actionable insights from complex datasets to support strategic client outcomes.</li>
+            <li class="mb-2"><strong>Financial Reconciliation:</strong> Conducted reconciliations, resolved payment discrepancies, and prepared detailed reports for stakeholders, enhancing data reporting accuracy.</li>
+            <li class="mb-2"><strong>Cross-Functional Collaboration:</strong> Worked closely with interdisciplinary teams to address complex claims, improving communication and teamwork skills applicable to data science projects.</li>
+            <li class="mb-2"><strong>Workflow Optimization:</strong> Identified inefficiencies within claims processing workflows and implemented data-driven strategies to enhance accuracy, reducing errors by 30% and speeding up processing times by 25%.</li>
+        </ul>
+
+        
+    </div>
+</section>
+
+
+
+<!-- Education Section -->
+<section class="education-section py-5">
+    <div class="container">
+        <h3 class="mb-4">EDUCATION</h3>
+        <div class="mb-4 mt-5">
+            <h5 class = "text-left">Post Graduate Program (PGP)</h5>
+            <p class="text-left">Great Lakes Institute of Management, Great Learning | Online | 2024 - Present</p>
+            <ul class = "text-left">
+                 <li class="mb-2"><strong>CGPA:</strong> 7.7/10</li>
+                 <li class="mb-2"><strong>Branch of Study:</strong> Data Science and Engineering</li>
+                 <li class="mb-2"><strong>Key skills developed:</strong> Python, SQL, Tableau, Supervised Machine learning, Unsupervised Machine learning, Statistics for Machine learning, Exploratory data analysis (EDA), Excel</li>
+            </ul>
+        </div>
+        <div>
+            <h5 class = "text-left">Bachelor of Science (BSC)</h5>
+            <p class = "text-left">Muthayammal College of Arts and Science | Rasipuram, India | 2019 - 2022</p>
+            <ul class = "text-left">
+                <li class="mb-2"><strong>CGPA:</strong> 7.9/10</li>
+                 <li class="mb-2"><strong>Branch of Study:</strong> Statistics</li>
+                 <li class="mb-2"><strong>Key skills developed:</strong> Descriptive Statistics, Inferential Statistics</li>
+        </div>
+    </div>
+</section>
+
+
+<!-- Bootstrap JS and FontAwesome for icons -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

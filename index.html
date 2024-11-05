@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom Styles for Dark Theme -->
+    <style>
+        body {
+            background-color: #121212; /* Dark background color */
+            color: #ffffff; /* Light text color */
+        }
+        .navbar, .navbar-dark .navbar-brand, .navbar-nav .nav-link {
+            color: #ffffff; /* White color for navbar elements */
+        }
+        .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link:hover {
+            color: #bb86fc; /* Accent color for active or hovered links */
+        }
+        section {
+            padding: 30px; /* Add some padding to sections */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">BHUVANENDIRAN</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Banner Section -->
+<section id="home-banner" class="d-flex align-items-center text-center text-white">
+    <div class="container">
+        <h1>Welcome to My Portfolio</h1>
+        <p class="lead">Explore my projects, skills, and achievements in data science.</p>
+        <a href="#projects" class="btn btn-primary mt-3">View Projects</a>
+    </div>
+</section>
+
+<!-- CSS for Banner -->
+<style>
+    #home-banner {
+        background-image: url('images/home/pexels-ron-lach-9783353.jpg'); /* Replace with your banner image path */
+        background-size: cover;
+        background-position: center;
+        height: 100vh; /* Full viewport height */
+        position: relative;
+    }
+
+    /* Dark overlay effect */
+    #home-banner::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+        z-index: 1;
+    }
+
+    /* Centered text overlay */
+    #home-banner .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    #home-banner h1 {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    #home-banner p {
+        font-size: 1.25rem;
+        color: #ddd;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        #home-banner h1 {
+            font-size: 2.5rem;
+        }
+
+        #home-banner p {
+            font-size: 1.1rem;
+        }
+    }
+</style>
+
+
+
+    <!-- Projects Section -->
+<section id="projects" class="container my-5">
+    <h2 class="text-white text-center mb-4">Projects</h2>
+    <div class="row">
+        <!-- Project Card 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card project-card h-100">
+                <img src="images/projects/fraud detection.jpg" class="card-img-top project-image" alt="Tableau HR Dashboard">
+                <div class="card-body text-white">
+                    <h5 class="card-title">Healthcare Fraud detection</h5>
+                    <p class="card-text">A project focused on predicting potentially fraudulent healthcare providers using machine learning models on inpatient, outpatient, and beneficiary claims data.</p>
+                    <span class="badge bg-secondary">#Python</span>
+                    <span class="badge bg-secondary">#EDA</span>
+                    <span class="badge bg-secondary">#Statistics</span>
+                    <span class="badge bg-secondary">#Machine learning</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Project Card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card project-card h-100">
+                <img src="images/projects/Zomato restauraunt.jpg" class="card-img-top project-image" alt="Earthquake Analysis">
+                <div class="card-body text-white">
+                    <h5 class="card-title">Restaurant Trends in Bengaluru</h5>
+                    <p class="card-text">This project analyzes Zomato's Bengaluru data with Python, NumPy, and Pandas to uncover key trends in location, cuisine, cost, and ratings, providing insights for new restaurants to succeed in a competitive market.</p>
+                    <span class="badge bg-secondary">#Python</span>
+                    <span class="badge bg-secondary">#EDA</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Project Card 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card project-card h-100">
+                <img src="images/projects/Telecom churn.jpg" class="card-img-top project-image" alt="House Price Prediction">
+                <div class="card-body text-white">
+                    <h5 class="card-title">Telecom Churn Dynamics</h5>
+                    <p class="card-text">This Tableau-driven analysis of telecom customer churn uncovers key patterns and drivers, enabling targeted retention strategies through dynamic visualizations and data-driven insights.</p>
+                    <span class="badge bg-secondary">#Tableau</span>
+                    <span class="badge bg-secondary">#Data Visualization</span>
+                </div>
+            </div>
+        </div>
+
+                <!-- Project Card 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="card project-card h-100">
+                <img src="images/projects/New wheels.jpg" class="card-img-top project-image" alt="House Price Prediction">
+                <div class="card-body text-white">
+                    <h5 class="card-title">New-Wheel's Sales Performance</h5>
+                    <p class="card-text">This data analytics project delivers key metrics and insights in quarterly reports to enhance NewWheels' sales performance and customer satisfaction, supporting data-driven decisions in the vehicle resale market.</p>
+                    <span class="badge bg-secondary">#SQL</span>
+                    <span class="badge bg-secondary">#Data Exploration</span>
+            </div>
+        </div>
+    </div>
+             <!-- Project Card 5 -->
+             <div class="col-md-4 mb-4">
+                <div class="card project-card h-100">
+                    <img src="images/projects/Airbnb.jpg" class="card-img-top project-image" alt="House Price Prediction">
+                    <div class="card-body text-white">
+                        <h5 class="card-title">Airbnb Price Optimization</h5>
+                        <p class="card-text">This project analyzes Airbnb's accommodation pricing data to optimize revenue by identifying factors influencing rates, enabling dynamic price adjustments for fair host-guest charges and increased company profits.</p>
+                        <span class="badge bg-secondary">#Excel</span>
+                        <span class="badge bg-secondary">#Data Analysis</span>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- CSS Styles -->
+<style>
+    #projects {
+        background-color: #121212;
+        padding: 40px 0;
+    }
+
+    .project-card {
+        background-color: #1c1c1c;
+        border: none;
+        overflow: hidden;
+        transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+        transform: scale(1.05);
+    }
+
+    .project-image {
+        transition: transform 0.3s;
+    }
+
+    .project-card:hover .project-image {
+        transform: scale(1.1);
+    }
+
+    .card-body {
+        background-color: #1c1c1c;
+        padding: 15px;
+    }
+
+    .card-title {
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .card-text {
+        color: #b0b0b0;
+    }
+
+    .badge {
+        margin-right: 5px;
+        color: #ffffff;
+        background-color: #3c3c3c;
+    }
+</style>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
